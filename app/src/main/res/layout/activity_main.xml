@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="RANDOM ID USER READY" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/online_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="TextView"
+        android:textAlignment="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:fastScrollEnabled="false"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerview"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="@drawable/border"
+            android:id="@+id/next_profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/ic_rewind" />
+
+        <ImageView
+            android:padding="15dp"
+            android:background="@drawable/border"
+            android:id="@+id/chose_human_btn"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_letter" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        style="@style/buttonst"
+        android:textSize="20sp"
+        android:id="@+id/start_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to start searching" />
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        style="@style/buttonstv2"
+        android:textSize="20sp"
+        android:id="@+id/settings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="settings" />
+
+</LinearLayout>

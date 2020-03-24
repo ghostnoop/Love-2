@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/settings_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Settings"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:id="@+id/cam_tv"
+        style="@style/settings_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="Camera permission" />
+
+    <Switch
+        android:theme="@style/SCBSwitch"
+        android:id="@+id/cam_sw"
+        style="@style/settings_sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/hd_tv"
+        style="@style/settings_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cam_tv"
+        android:text="HD connection" />
+
+    <Switch
+        android:id="@+id/hd_sw"
+        style="@style/settings_sw"
+        android:theme="@style/SCBSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cam_tv"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/men_tv"
+        style="@style/settings_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hd_tv"
+        android:text="Look for men" />
+
+    <RadioButton
+        android:theme="@style/SCBSwitch"
+        android:clickable="false"
+        android:id="@+id/men_sw"
+        style="@style/settings_sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hd_tv"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/women_tv"
+        style="@style/settings_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/men_tv"
+        android:text="Look for women" />
+
+    <RadioButton
+        android:theme="@style/SCBSwitch"
+        android:clickable="false"
+        android:id="@+id/women_sw"
+        style="@style/settings_sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/men_tv"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
